@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+    </head>
+    <body>
+        <main id="main-container">
+            <div id="calculator">
+                <div id="display">
+                    <div class="displayCurrent" type="text">0</div>
+                </div>
+
+                <div id="keys">
+                    <div>
+                        <button id="7" class="btn-grey" role="button">7</button>
+                        <button id="8" class="btn-grey" role="button">8</button>
+                        <button id="9" class="btn-grey" role="button">9</button>
+                        <button id="+" class="btn-yellow" role="button">+</button>
+                    </div>
+                    <div>
+                        <button id="4" class="btn-grey" role="button">4</button>
+                        <button id="5" class="btn-grey" role="button">5</button>
+                        <button id="6" class="btn-grey" role="button">6</button>
+                        <button id="-" class="btn-yellow" role="button">-</button>
+                    </div>
+                    <div>
+                        <button id="1" class="btn-grey" role="button">1</button>
+                        <button id="2" class="btn-grey" role="button">2</button>
+                        <button id="3" class="btn-grey" role="button">3</button>
+                        <button id="x" class="btn-yellow" role="button">x</button>
+                    </div>
+                    <div>
+                        <button id="0" class="btn-grey" role="button">0</button>
+                        <button id="C" class="btn-clear" role="button">C</button>
+                        <button id="=" class="btn-equal" role="button">=</button>
+                        <button id="÷" class="btn-yellow" role="button">÷</button>
+                    </div>
+                    <div>
+                        <button type="button" onClick="window.location.reload()" class="btn-allclear" role="button">AC</button>
+                        <button id="." class="btn-yellow" role="button">.</button>
+                        <button id="^" class="btn-yellow" role="button">x&sup2;</button>
+                        <button id="%" class="btn-yellow" role="button">%</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
