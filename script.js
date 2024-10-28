@@ -68,7 +68,43 @@ btn.forEach(function (button) {
       secondNumber = parseFloat(secondNumber);
       result = operate(firstNumber, secondNumber);
     }
+  
+    // Allow operator change after second number is entered
+    if (isNaN(button.id) && button.id !== "=" && button.id !== "." && firstNumber && secondNumber) {
+      currentOperator = button.id;
+    }
 
+    // Display result if a second operation is performed
+    if (currentOperator && firstNumber && secondNumber && operator) {
+      message.textContent = `${result}`;
+      currentValue = result; // Store result for further operations
+      firstNumber = "";
+      secondNumber = "";
+      operator = "";
+      currentOperator = "";
+    }
+
+    // Handle "=" to display final result
+    if (button.id === "=") {
+      firstNumber = parseFloat(firstNumber);
+      secondNumber = parseFloat(secondNumber);
+      result = operate(firstNumber, secondNumber);
+      console.log("Result: " + result); // Log final result
+      message.textContent = `${result}`;
+      currentValue = result;
+      firstNumber = "";
+      secondNumber = "";
+      operator = "";
+    }
+    if (button.id === "C") {
+      currentValue = ""; 
+      firstNumber = "";
+      secondNumber = "";
+      operator = "";
+      currentOperator = "";
+      result ="";
+      message.textContent = `0`;
+    }
   
   });
 });
