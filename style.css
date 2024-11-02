@@ -1,0 +1,122 @@
+@import url('https://fonts.cdnfonts.com/css/calculator');
+
+/* Main container for centering the calculator */
+#main-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 100px;
+}
+
+/* Grid container for buttons */
+#keys {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 5px;
+   margin-top: 25px;
+}
+
+body {
+   background-size: auto;
+   background-image: url("./images/paper.jpg");
+}
+
+/* Base styles for all buttons */
+.btn-yellow,
+.btn-grey,
+.btn-equal,
+.btn-allclear,
+.btn-clear {
+   background-color: #202020;
+   border-radius: 28px;
+   border: none;
+   box-sizing: border-box;
+   color: #ebefff;
+   font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-weight: 500;
+   padding: 18px 19px;
+   text-align: center;
+   user-select: none;
+   cursor: pointer;
+   width: 80px;
+   height: 60px;
+   font-size: 25px;
+   margin: 2px;
+   transition: background-color 100ms, color 100ms;
+}
+
+/* Hover and focus effects for all buttons */
+.btn-grey:hover, .btn-grey:focus,
+.btn-equal:hover, .btn-equal:focus,
+.btn-yellow:hover, .btn-yellow:focus,
+.btn-clear:hover, .btn-clear:focus,
+.btn-allclear:hover, .btn-allclear:focus {
+   background-color: #bababa;
+   color: #000;
+}
+
+/* Controls container for calculator display and buttons */
+#calculator {
+   display: flex;
+   flex-direction: column;
+   box-sizing: border-box;
+   border: 20px solid #141414;
+   background: #141414;
+   border-radius: 28px;
+   margin: 70px 5px;
+   gap: 5px;
+   width: 400px;
+   height: 530px;
+}
+
+/* Display area styling */
+#display {
+   color: whitesmoke;
+   font-family: 'Calculator', sans-serif;
+   font-weight: bold;
+   border-top: 30px solid #9aacac;
+   border-bottom: 20px solid #9aacac;
+   padding: 20px;
+   background: #9aacac;
+   border-radius: 10px;
+   margin: 0 8px;
+}
+
+/* Styles for the current display text */
+.displayCurrent {
+   font-size: 30px;
+   text-align: right;
+   color: #141414;
+   font-weight: bold;
+   width: 100%;
+}
+
+
+
+/* Button-specific styles */
+.btn-equal {
+   background: green;
+   color: #fff;
+}
+
+.btn-grey {
+   background: #202020;
+   color: #fff;
+}
+
+.btn-yellow {
+   background: rgb(245, 146, 62);
+   color: #fff;
+}
+
+.btn-allclear {
+   background: red;
+   color: #fff;
+}
+
+.btn-clear {
+   background: rgba(255, 0, 0, 0.413);
+   color: #fff;
+}
